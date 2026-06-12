@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroTec Sustentável - Projeto Agrinho</title>
+    <title>AgroTec Sustentável - Agrinho 2026</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="container">
+        <div class="container navbar">
             <img src="img/logo-agrotec.png" alt="Logo AgroTec Sustentável" class="logo">
             <nav>
                 <a href="#inicio">Início</a>
-                <a href="#projeto">O Projeto</a>
+                <a href="#sobre">O Projeto</a>
                 <a href="#comedouro">Comedouro</a>
                 <a href="#simulador">Simulador</a>
             </nav>
@@ -21,37 +22,65 @@
 
     <section id="inicio" class="hero">
         <img src="img/banner.png" alt="Banner AgroTec Sustentável" class="banner-img">
-        <div class="hero-text">
-            <h1>Agro forte, futuro sustentável</h1>
-            <p>Inovação e sustentabilidade no campo para o Concurso Agrinho 2026.</p>
+        <div class="hero-overlay">
+            <h1>AgroTec Sustentável</h1>
+            <p>Inovação tecnológica e respeito pelo meio ambiente no Concurso Agrinho 2026</p>
         </div>
     </section>
 
-    <section id="projeto" class="container section">
+    <section id="sobre" class="container section">
         <h2>Sobre o Projeto</h2>
-        <p>O AgroTec Sustentável une tecnologia e práticas agrícolas conscientes para otimizar a produção e preservar o meio ambiente.</p>
-        <img src="img/maquete-geral.png" alt="Maquete Geral do Projeto" class="feature-img">
+        <div class="grid-2">
+            <div class="text-block">
+                <p>O <strong>AgroTec Sustentável</strong> é uma iniciativa desenvolvida para transformar a rotina no campo através da tecnologia acessível. O nosso foco é otimizar o uso de recursos escassos, como a água e os alimentos, reduzindo o desperdício e aumentando a eficiência da produção agrícola e pecuária.</p>
+                <p>Utilizando conceitos de automação e sustentabilidade, mostramos que é possível alinhar a produtividade com a preservação ambiental de forma prática.</p>
+            </div>
+            <div class="image-block">
+                <img src="img/maquete-geral.png" alt="Maquete do Projeto AgroTec" class="content-img">
+            </div>
+        </div>
     </section>
 
-    <section id="comedouro" class="container section">
-        <h2>Comedouro Automatizado</h2>
-        <p>Conheça o nosso sistema inteligente de alimentação animal, que evita desperdícios e monitora o consumo em tempo real.</p>
-        <img src="img/comedouro.png" alt="Esquema do Comedouro" class="feature-img">
+    <section id="comedouro" class="bg-alt">
+        <div class="container section">
+            <h2>Comedouro Inteligente</h2>
+            <div class="grid-2 reverse">
+                <div class="text-block">
+                    <p>O nosso protótipo de <strong>Comedouro Automatizado</strong> foi desenhado para monitorar a alimentação dos animais em tempo real. Através de sensores integrados, o sistema liberta a quantidade exata de ração necessária, evitando que o alimento fique exposto à humidade ou a pragas.</p>
+                    <ul>
+                        <li>Redução drástica no desperdício de ração.</li>
+                        <li>Acionamento controlado por horários ou sensores de presença.</li>
+                        <li>Higiene e saúde reforçadas para os animais.</li>
+                    </ul>
+                </div>
+                <div class="image-block">
+                    <img src="img/comedouro.png" alt="Protótipo do Comedouro Automatizado" class="content-img">
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="simulador" class="container section">
-        <h2>Simulador de Economia</h2>
-        <p>Simule a economia de recursos utilizando as tecnologias do AgroTec Sustentável:</p>
-        <div class="simulator-box">
-            <label for="dias">Dias de uso:</label>
-            <input type="number" id="dias" value="30" min="1">
-            <button onclick="calcularEconomia()">Calcular Impacto</button>
-            <div id="resultado" class="result"></div>
+        <h2>Simulador de Impacto Sustentável</h2>
+        <p class="subtitle">Insere a quantidade de dias para estimar a poupança de recursos com a nossa tecnologia:</p>
+        
+        <div class="simulator-card">
+            <div class="input-group">
+                <label for="dias">Dias de Funcionamento:</label>
+                <input type="number" id="dias" value="30" min="1" placeholder="Ex: 30">
+            </div>
+            <button onclick="calcularEconomia()">Calcular Poupança</button>
+            
+            <div id="resultado" class="result-box hidden">
+                </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 AgroTec Sustentável - Projeto Escolar para o Agrinho.</p>
+        <div class="container">
+            <p>&copy; 2026 AgroTec Sustentável | Projeto para o Concurso Agrinho</p>
+            <p class="sub-footer">Desenvolvido com fins educativos utilizando GitHub Pages</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
