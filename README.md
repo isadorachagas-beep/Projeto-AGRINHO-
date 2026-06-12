@@ -23,7 +23,7 @@ O repositório está organizado da seguinte forma:
 ├── script.js         # Lógica de cálculo do simulador interativo
 ├── README.md         # Documentação e apresentação do projeto
 └── img/              # Diretório contendo as imagens e logotipos
-    ├── logo-agrotec.png
+    ├── logo.png
     ├── banner.png
     ├── comedouro.png
     └── maquete-geral.png
