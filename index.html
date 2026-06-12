@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTec Sustentável - Projeto Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/logo-agrotec.png" alt="Logo AgroTec Sustentável" class="logo">
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#projeto">O Projeto</a>
+                <a href="#comedouro">Comedouro</a>
+                <a href="#simulador">Simulador</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <img src="img/banner.png" alt="Banner AgroTec Sustentável" class="banner-img">
+        <div class="hero-text">
+            <h1>Agro forte, futuro sustentável</h1>
+            <p>Inovação e sustentabilidade no campo para o Concurso Agrinho 2026.</p>
+        </div>
+    </section>
+
+    <section id="projeto" class="container section">
+        <h2>Sobre o Projeto</h2>
+        <p>O AgroTec Sustentável une tecnologia e práticas agrícolas conscientes para otimizar a produção e preservar o meio ambiente.</p>
+        <img src="img/maquete-geral.png" alt="Maquete Geral do Projeto" class="feature-img">
+    </section>
+
+    <section id="comedouro" class="container section">
+        <h2>Comedouro Automatizado</h2>
+        <p>Conheça o nosso sistema inteligente de alimentação animal, que evita desperdícios e monitora o consumo em tempo real.</p>
+        <img src="img/comedouro.png" alt="Esquema do Comedouro" class="feature-img">
+    </section>
+
+    <section id="simulador" class="container section">
+        <h2>Simulador de Economia</h2>
+        <p>Simule a economia de recursos utilizando as tecnologias do AgroTec Sustentável:</p>
+        <div class="simulator-box">
+            <label for="dias">Dias de uso:</label>
+            <input type="number" id="dias" value="30" min="1">
+            <button onclick="calcularEconomia()">Calcular Impacto</button>
+            <div id="resultado" class="result"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroTec Sustentável - Projeto Escolar para o Agrinho.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
